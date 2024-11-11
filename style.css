@@ -134,7 +134,7 @@ section .left {
 
 section .right {
     /* background-color: blue; */
-    background-image: url(/image-hero-desktop.png);
+    background-image: url(image-hero-desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
