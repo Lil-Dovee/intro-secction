@@ -26,7 +26,7 @@ nav ul {
     list-style: none;
     align-items: center;
     display: flex;
-    /* background-color: aqua; */
+   
 }
 
 .start {
@@ -134,13 +134,12 @@ section .left {
 
 section .right {
     /* background-color: blue; */
-    background-image: url(images/image-hero-desktop.png);
+    background-image: url(image-hero-desktop.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 45%;
-    /* margin-bottom: 2em; */
-    /* height: 70vh; */
+    
 
 }
 
@@ -169,8 +168,7 @@ button {
     margin-bottom: 7em;
 }
 .links{
-    /* width: 70%; */
-    /* background-color: black; */
+    
     padding: 14px;
 }
 .links img{
