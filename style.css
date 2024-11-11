@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--AlmostWhite);
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+hero {
+    width: 100%;
+    padding: 3% 4%;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 0 20px;
+    align-items: center;
+    line-height: 12px;
+    color: var(--MediumGray);
+}
+
+nav a:hover {
+    color: var(--AlmostBlack);
+    cursor: pointer;
+}
+
+#submenu1,
+#submenu2 {
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    background-color: var(--AlmostWhite);
+    margin-left: 1em;
+    padding: 10px 0px;
+    border-radius: 12px;
+    box-shadow: inset 2px 3px 4px 5%;
+
+
+}
+
+li:hover ul#submenu1,
+li:hover ul#submenu2 {
+    transition: 0.2s ease;
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--AlmostWhite);
+}
+
+ul#submenu1 {
+    width: 18%;
+
+}
+
+ul#submenu2 {
+    width: 14%;
+}
+
+
+#submenu1 li,
+#submenu2 li {
+    padding: 8px 0px;
+    /* width: 80%; */
+}
+
+li img {
+    margin-left: -1em;
+}
+
+li img:hover {
+    rotate: 180deg;
+}
+
+#submenu1 li a,
+#submenu2 li a {
+    text-decoration: none;
+    color: var(--MediumGray);
+}
+
+.end li:nth-child(2) {
+    border: 1px black solid;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+.end li:hover {
+    cursor: hover;
+}
+
+section {
+    height: 80vh;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 4em;
+    background-color: var(--AlmostWhite);
+    /* background-color: brown; */
+    display: flex;
+}
+
+section .left {
+    width: 70%;
+    /* background-color: aqua; */
+}
+
+section .right {
+    /* background-color: blue; */
+    background-image: url(images/image-hero-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45%;
+    /* margin-bottom: 2em; */
+    /* height: 70vh; */
+
+}
+
+.left h1 {
+    font-size: 75px;
+    margin-top: 1em;
+    margin-bottom: 0.4em;
+}
+
+.left p {
+    width: 50%;
+    font-size: 18px;
+    color: var(--MediumGray);
+    margin-bottom: 2em;
+}
+
+button {
+    background-color: black;
+    color: var(--AlmostWhite);
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 8em;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 7em;
+}
+.links{
+    /* width: 70%; */
+    /* background-color: black; */
+    padding: 14px;
+}
+.links img{
+    padding-right: 1.5em;
+}
